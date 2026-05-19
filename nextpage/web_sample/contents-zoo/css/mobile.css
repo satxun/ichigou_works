@@ -1,0 +1,153 @@
+.warp {
+    width: 80%;
+    margin: 0 auto;
+}
+
+img {
+    width: 100%;
+}
+
+/*ーーーここからヘッダーナビーーーーーー*/
+
+a {
+    text-decoration: none;
+    color: #000;
+}
+
+a:hover {
+    opacity: 0.5;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+    z-index: 100;
+    top: 0;
+    left: 5%;
+    z-index: 100;
+    width: 90%;
+    height: 7vw;
+    background: rgba(255, 255, 255, 0.5)
+}
+
+.header__heading {
+    letter-spacing: 0.3vw;
+    font-family: 'Alfa Slab One', cursive;
+    font-size: 3.5vw;
+}
+
+.breadcrumbs__container {
+    width: 100%;
+    margin-top: 2vw;
+    border: 2px solid #000;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.breadcrumbs__item {
+    padding: 1vw 2vw;
+    font-size: 2vw;
+}
+
+.breadcrumbs__item:nth-child(1) {
+    margin-left: 2vw;
+}
+
+.breadcrumbs__item--current {
+    padding: 1vw 2vw;
+    margin-right: 2vw;
+    font-size: 2vw;
+    font-weight: bold;
+}
+
+/*ーーーーここまでheaderーーーーーーーー*/
+
+/*ーーーーここからsliderーーーーーーーー*/
+.slider {
+    width: 90%;
+    margin: 15vw auto 5vw;
+}
+
+.slider__item {
+    width: 90%;
+    margin: 2vw auto;
+}
+
+.slider__item li {
+    width: 25%;
+    margin: 0 15%;
+}
+
+/*ーーーーーーここまでsliderーーーーーーーー*/
+
+/*ーーーーーーここからnoteーーーーーーーー*/
+.note {
+    margin: 0 auto;
+    width: 70%;
+}
+
+.note__box {
+    width: 100%;
+}
+
+.note__heading {
+    text-align: left;
+    font-size: 3vw;
+    margin-top: 1.4vw;
+    margin-bottom: 2vw;
+}
+
+.note__text {
+    width: 90%;
+    font-size: 2.5vw;
+    margin-top: 0.5vw;
+    margin-bottom: 4vw;
+    margin-left: auto;
+}
+
+.note__text--main {
+    width: 90%;
+    line-height: 3.5vw;
+    font-size: 2.5vw;
+    margin-top: 0.5vw;
+    margin-left: auto;
+    margin-bottom: 4vw;
+}
+
+.note__rink {
+    width: 35%;
+    font-size: 1.2vw;
+    padding: .3vw .2vw .2vw;
+    margin: 0 auto;
+    text-align: center;
+    border: 1px solid #000;
+    border-radius: 10px;
+}
+
+/*-------ここからfooter-------------*/
+.footer {
+    margin: 0 auto;
+}
+
+.footer__img {
+    width: 100%;
+}
+
+.footer__copyright {
+    text-align: center;
+    width: 100%;
+    height: 5vh;
+    margin-top: -1vw;
+    background-color: #000;
+    color: #fff;
+}
+
+.copyright {
+    color: #fff;
+    padding-top: 3vw;
+    font-size: 2vw;
+    letter-spacing: 1px;
+    font-family: 'Alfa Slab One', cursive;
+}
