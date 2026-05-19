@@ -1,0 +1,158 @@
+@charset "UTF-8";
+.warp {
+    width: 80%;
+    margin: 0 auto;
+}
+
+@media screen and (min-width:1300px) {
+    .warp {
+        width: 1300px;
+        margin: 0 auto;
+    }
+}
+
+/*ーーーーーーーーここからヘッダーナビーーーーーーーーーー*/
+.Toggle {
+    display: none;
+}
+
+.mobile-nav {
+    display: none;
+}
+
+a {
+    text-decoration: none;
+    color: #000;
+}
+
+a:hover {
+    opacity: 0.5;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+    z-index: 100;
+    top: 1%;
+    left: 5%;
+    width: 90%;
+}
+
+.header__heading {
+    letter-spacing: 0.3vw;
+    font-family: 'Alfa Slab One', cursive;
+    font-size: 2vw;
+ }
+
+
+nav {
+    width: 60%;
+}
+
+.global-nav {
+    display: flex;
+    justify-content: space-between;
+}
+
+.global-nav__item {
+    text-align: center;
+    font-size: 1.2vw;
+    font-weight: bold;
+    margin: 2vw auto 0px;
+    width: 20%;
+    overflow: hidden;
+}
+/*下線*/
+.underbar {
+    width: 100px;
+    height: 0.2vw;
+    margin-top: 5px;
+    background-color: #000;
+    animation: myanimation 1s infinite;
+}
+
+@keyframes myanimation {
+    0% {
+        margin-left: -100%;
+    }
+
+    100% {
+        margin-left: 100%;
+    }
+}
+
+.breadcrumbs {
+    display: none;
+}
+
+/*ーーーーーーーーここまでヘッダーナビーーーーーーーーーーーー*/
+/*ーーーーーーーーここから作品欄ーーーーーーーーーーーーーーー*/
+
+.contents {
+    margin: 30vh auto 15vw;
+    display: flex;
+    justify-content: space-around;
+}
+
+.contents__container {
+    text-align: center;
+    font-size: 1.2vw;
+    width: 25%;
+    height: auto;
+}
+
+.contents__heading {
+    text-align: center;
+    font-size: 3vw;
+    margin: 30% auto 3%;
+}
+
+.contents__text{
+    font-size: 1.8vw;
+    padding: 2%;
+}
+.contents__item {
+    width: 25%;
+    overflow: hidden;
+}
+
+.contents__item img {
+    width: 100%;
+    opacity: 1;
+    transition: transform 0.5s linear 0s;
+    transform: scale(1.0);
+}
+
+.contents__item img:hover {
+  transform: scale(1.5);
+    opacity: 0.8;
+}
+/*ーーーーーーーーここまで作品欄ーーーーーーーーーーーーーーー*/
+/*-------ここからfooter-------------*/
+.footer {
+    margin: 0 auto;
+}
+
+.footer__img {
+    width: 100%;
+}
+
+.footer__img img {
+    width: 100%;
+}
+
+.footer__copyright {
+    text-align: center;
+    width: 100%;
+    margin-top: -1vw;
+    background-color: #000;
+
+}
+
+.copyright {
+    color: #fff;
+    padding: 5vw;
+    font-size: 2vw;
+    font-family: 'Alfa Slab One', cursive;
+}

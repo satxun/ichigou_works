@@ -1,0 +1,133 @@
+.warp {
+    width: 80%;
+    margin: 0 auto;
+}
+
+img {
+    width: 100%;
+}
+
+/*ーーーーここからheaderーーーーーーーー*/
+
+a {
+    text-decoration: none;
+    color: #000;
+}
+
+a:hover {
+    opacity: 0.5;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+    z-index: 100;
+    top: 0;
+    left: 5%;
+    width: 90%;
+    height: 5vw;
+    background: rgba(255, 255, 255, 0.5)
+}
+
+
+.header__heading {
+    letter-spacing: 0.3vw;
+    font-family: 'Alfa Slab One', cursive;
+    font-size: 3vw;
+}
+
+.breadcrumbs__container {
+    width: 100%;
+    margin-top: 2vw;
+    border: 2px solid #000;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.breadcrumbs__item {
+    padding: 0.5vw 1.5vw;
+    font-size: 1.5vw;
+}
+
+.breadcrumbs__item:nth-child(1) {
+    margin-left: 2vw;
+}
+
+.breadcrumbs__item--current {
+    padding: 0.5vw 1.5vw;
+    margin-right: 2vw;
+    font-size: 1.5vw;
+    font-weight: bold;
+}
+
+/*ーーーーここまでheaderーーーーーーーー*/
+
+/*ーーーーここからsliderーーーーーーーー*/
+.slider {
+    width: 60%;
+    margin: 20vw auto 15vw;
+}
+
+/*ーーーーーーここまでsliderーーーーーーーー*/
+
+/*ーーーーーーここからnoteーーーーーーーー*/
+.note {
+    margin: 0 auto;
+    width: 90%;
+    display: flex;
+    justify-content: space-around;
+
+}
+
+.note__box {
+    width: 48%;
+}
+
+.note__heading {
+    text-align: left;
+    font-size: 2.3vw;
+    margin-top: 1.4vw;
+}
+
+.note__text {
+    text-align: center;
+    font-size: 1.8vw;
+    margin: 0.5vw auto 2vw;
+}
+
+.note__text--main {
+    width: 90%;
+    line-height: 2.5vw;
+    letter-spacing: 1px;
+    font-size: 1.8vw;
+    margin: 0.5vw auto 2vw;
+}
+
+/*-------ここまでnoteーーーーーーーー*/
+
+/*-------ここからfooter-------------*/
+.footer {
+    margin: 10vw auto 0;
+}
+
+.footer__img {
+    width: 100%;
+}
+
+.footer__copyright {
+    text-align: center;
+    width: 100%;
+    margin-top: -1vw;
+    background-color: #000;
+
+}
+
+.copyright {
+    color: #fff;
+    padding: 5vw;
+    font-size: 2vw;
+    letter-spacing: 1px;
+    font-family: 'Alfa Slab One', cursive;
+}
