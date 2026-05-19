@@ -1,0 +1,169 @@
+body {
+  background-color: lightgray;
+}
+
+.warp {
+  width: 80%;
+  margin: 5vw auto;
+  background-color: white;
+  color: gray;
+  border-radius: 10px;
+}
+
+@media screen and (min-width:1300px) {
+  .warp {
+    width: 1300px;
+    margin: 5vw auto;
+    background-color: white;
+    color: gray;
+  }
+}
+
+.container {
+  width: 90%;
+  margin: 0 auto;
+}
+
+/*ーーーーーーーーここからh1ーーーーーーーーーーーー*/
+.header__heading {
+  padding: 3vw;
+  font-size: 3vw;
+  text-align: center;
+    letter-spacing: 1px;
+  font-family: 'Alfa Slab One', cursive;
+}
+
+/*ーーーーーーーーここまでｈ１ーーーーーーーーーーーー*/
+/*ーーーーーーーーここからprofileーーーーーーーーーーーー*/
+.profile {
+  display: flex;
+  justify-content: space-between;
+}
+
+.profile__container {
+  width: 45%;
+}
+
+.profile__heading {
+  margin: 1vw auto;
+  padding-bottom: 1vw;
+  font-size: 2vw;
+  border-bottom: 0.2vw solid lightgray;
+}
+
+.profile__text {
+  margin: 0 auto;
+  text-align: right;
+  font-size: 1.5vw;
+}
+
+.profile__detail {
+  padding-left: 5%;
+  margin: 0 auto;
+  width: 95%;
+  font-size: 1.2vw;
+  line-height: 2.5vw;
+
+}
+
+.profile__container--img {
+  margin-top: 2vw;
+  width: 30%;
+}
+
+.profile__container--img img {
+  width: 90%;
+  text-align: center;
+}
+
+/*ーーーーーーーーここまでprofileーーーーーーーーーーーー*/
+/*ーーーーーーーーここからself-prーーーーーーーーーーーー*/
+.self-pr__heading {
+  margin: 1vw auto;
+  padding-bottom: 1vw;
+  font-size: 2vw;
+  border-bottom: 0.2vw solid lightgray;
+}
+
+.self-pr__text {
+  width: 98%;
+  margin-left: auto;
+  font-size: 1.2vw;
+  line-height: 2.5vw;
+}
+
+/*ーーーーーーーーここまでself-prーーーーーーーーーーーー*/
+/*ーーーーーーーーここまで作品欄ーーーーーーーーーーーーー*/
+.skill__heading {
+  margin: 1vw auto;
+  padding-bottom: 1vw;
+  font-size: 2vw;
+  border-bottom: 0.2vw solid lightgray;
+}
+
+.skill__containe {
+  width: 80%;
+  margin: 0 auto;
+}
+
+dt {
+  border-bottom: 1px solid lightgray;
+  text-align: left;
+  font-size: 2vw;
+}
+
+dd {
+  margin-bottom: 2vw;
+  text-align: right;
+  font-size: 2vw;
+}
+
+/*ーーーーーーーーここからfooterーーーーーーーーーーーーー*/
+.breadcrumbs__container {
+  width: 30%;
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto 2vw;
+}
+
+.breadcrumbs__item {
+  font-size: 1.5vw;
+  padding: 2vw;
+  font-weight: bold;
+  overflow: hidden;
+}
+
+.breadcrumbs__item:nth-child(2) {
+  margin-top: 1.7%;
+  text-align: center;
+  width: 10%;
+  height: 0.3vh;
+  overflow: hidden;
+}
+
+.breadcrumbs__item a {
+  text-decoration: none;
+  color: gray;
+}
+
+/*下線*/
+.underbar {
+content: "";
+  width: 100px;
+  height: 1px;
+margin-top: 3px;
+  background-color: gray;
+  animation: myanimation 1s infinite;
+}
+
+@keyframes myanimation {
+  0% {
+    margin-left: -100%;
+  }
+
+  100% {
+    margin-left: 200%;
+  }
+}
+
+/*ーーーーーーーーここからfooterーーーーーーーーーーーーー*/

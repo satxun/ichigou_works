@@ -1,0 +1,175 @@
+@charset "UTF-8";
+
+.warp {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.header__top {
+    width: 100%;
+}
+
+.header__top img {
+    width: 100%;
+}
+
+/*_____________ここからnav________________*/
+.global-nav__container {
+    margin-top: 8vh;
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    border-right: 1px solid #000;
+    border-left: 1px solid #000;
+}
+
+.global-nav__container {
+    width: 100%;
+}
+
+.global-nav__container a {
+    text-align: center;
+    text-decoration: none;
+    color: #000;
+}
+
+.global-nav__item {
+    font-size: 2.5vw;
+    padding: 10px;
+    width: 33%;
+    text-align: center;
+    font-weight: bold;
+}
+
+.global-nav__item:nth-child(2) {
+    font-size: 2.5vw;
+    padding: 10px;
+    text-align: center;
+    font-weight: bold;
+    border-right: 1px solid #000;
+    border-left: 1px solid #000;
+}
+
+/*_____________ここまでnav________________*/
+/*_____________ここからskill________________*/
+h2 {
+    font-size: 6vw;
+    text-align: center;
+}
+
+.skill {
+    margin: 15vw auto;
+}
+
+.skill__container {
+    display: block;
+
+}
+
+.skill__box {
+    width: 100%;
+    margin: 5vw auto 10vw;
+}
+
+.skill__title--large {
+    font-size: 4vw;
+    padding-top: 1vw;
+    text-align: center;
+}
+
+.skill__title--small {
+    font-size: 3vw;
+    padding-top: 1vw;
+    text-align: center;
+}
+
+.skill__item {
+    width: 90%;
+    margin: 2vw auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.skill__icon {
+    margin: 2vw auto;
+    width: 20%;
+}
+
+.skill__icon img {
+    width: 100%;
+}
+
+.skill__text {
+    font-size: 3vw;
+    width: 80%;
+    margin: 2vw auto;
+    letter-spacing: 1px;
+    line-height: 4.5vw;
+}
+
+/*-----ここからWORK------*/
+.work__heading {
+    margin: 5vw auto 10vw;
+}
+
+.work__nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.work__item {
+    width: 45%;
+}
+
+.work__item img {
+    width: 100%;
+}
+
+.work__item a {
+    text-decoration: none;
+}
+
+.caption {
+    text-decoration: none;
+    color: #000;
+    text-align: center;
+    margin: 0 auto 5vw;
+    font-family: 'Alfa Slab One', cursive;
+}
+
+.caption__02 {
+    text-decoration: none;
+    color: #000;
+    text-align: center;
+    margin: 0 auto 5vw;
+}
+
+/*______ここからfooter____________*/
+.footer {
+    margin: 0 auto;
+}
+
+.footer__img {
+    width: 100%;
+}
+
+.footer__img img {
+    width: 100%;
+}
+
+.footer__copyright {
+    text-align: center;
+    width: 100%;
+    margin-top: -1vw;
+    background-color: #000;
+
+}
+
+.copyright {
+    color: #fff;
+    padding: 5vw;
+    font-size: 2vw;
+    font-family: 'Alfa Slab One', cursive;
+    letter-spacing: 1px;
+}

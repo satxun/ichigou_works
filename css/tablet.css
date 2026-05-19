@@ -1,0 +1,244 @@
+@charset "UTF-8";
+
+.warp {
+    width: 80%;
+    margin: 0 auto;
+
+}
+
+/*
+@media screen and (min-width:1300px) {
+    .warp {
+        width: 1300px;
+        margin: 0 auto;
+    }
+}*/
+
+.header__top {
+    width: 100%;
+}
+
+.header__top img {
+    width: 100%;
+}
+
+/*_____________ここからnav________________*/
+.global-nav__container {
+    margin-top: 8vh;
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+}
+
+.global-nav__container {
+    width: 100%;
+}
+
+.global-nav__item a {
+    text-decoration: none;
+    color: #000;
+}
+
+.global-nav__item {
+    font-size: 2vw;
+    font-weight: bold;
+    margin: 10px;
+    position: relative;
+    /*枠とのずれを無くす*/
+    display: inline-block;
+    /*インラインブロックに変更*/
+    padding: 1.5vw 3.5vw;
+    /*文字依存なのでこれで枠線がでる範囲を指定*/
+
+    /*文字色*/
+}
+
+.global-nav__item::before,
+.global-nav__item::after {
+    /*global-nav__itemの前後にという疑似要素*/
+    position: absolute;
+    z-index: -10;
+    /*リンクの下に回す*/
+    top: -2px;
+    /*ボーダー分の枠とのずれを微調整*/
+    left: -2px;
+    /*ボーダー分の枠とのずれを微調整*/
+    content: "";
+    /*このコンテンツは空というの示す*/
+    width: 0px;
+    /*今はこの要素にサイズを入れない*/
+    height: 0px;
+    /*今はこの要素にサイズを入れない*/
+    border: 2px solid transparent;
+    /*太さ２ｐｘの一本線をtransparentで今は透明化している*/
+}
+
+
+.global-nav__item:hover::before {
+    /*ホバー時のglobal-nav__item前の要素*/
+    width: 100%;
+    /*ホバー時に親要素と同じサイズを持たせる*/
+    height: 100%;
+    /*ホバー時に親要素と同じサイズを持たせる*/
+    border-top-color: #000;
+    /*線の色*/
+    border-right-color: #000;
+    /*線の色*/
+    transition: width 0.3s, height 0.3s 0.3s;
+    /*アニメーション時のwidthとheightを0.3秒かけて動かすという記述*/
+    /*ホバーしたときに親要素のサイズの空白の箱の上の線が0.3ｓ間かけて伸び0.３ｓ後に右の線が３ｓかけて伸びるという記述*/
+}
+
+.global-nav__item:hover::after {
+    /*ホバー時のglobal-nav__item後ろの要素*/
+    width: 100%;
+    /*ホバー時に親要素と同じサイズを持たせる*/
+    height: 100%;
+    /*ホバー時に親要素と同じサイズを持たせる*/
+    border-bottom-color: #000;
+    /*線の色*/
+    border-left-color: #000;
+    /*線の色*/
+    transition: height 0.3s, width 0.3s 0.3s;
+    /*アニメーション時のwidthとheightを0.3秒かけて動かすという記述*/
+    /*ホバーしたときに親要素のサイズの空白の箱の左の線が0.3ｓ間かけて伸び0.３ｓ後に下の線が３ｓかけて伸びるという記述*/
+}
+
+/*_____________ここまでnav________________*/
+/*_____________ここからskill________________*/
+.skill__heading {
+    margin-top: 5vw;
+    margin-bottom: 2.5vw;
+    margin-left: -1vw;
+    font-size: 3.5vw;
+    text-align: center;
+}
+
+.skill__container {
+    display: flex;
+    justify-content: space-around;
+}
+
+.skill__box {
+    width: 48%;
+
+}
+
+.skill__title--large {
+    font-size: 3vw;
+    padding-top: 1vw;
+    text-align: center;
+}
+
+.skill__title--small {
+    font-size: 1.5vw;
+    padding-top: 1vw;
+    text-align: center;
+}
+
+.skill__item {
+    width: 75%;
+    margin: 2vw auto;
+    display: flex;
+    justify-content: space-around;
+}
+
+.skill__icon {
+    width: 20%;
+}
+
+.skill__icon img {
+    width: 100%;
+}
+
+.skill__text {
+    font-size: 2vw;
+    width: 90%;
+    margin: 2vw auto;
+    letter-spacing: 1px;
+    line-height: 2.5vw;
+}
+
+/*-----ここからWORK------*/
+.work__heading {
+    margin-top: 5vw;
+    margin-bottom: 2.5vw;
+    font-size: 3.5vw;
+    text-align: center;
+}
+
+.work__nav {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.work__item {
+    width: 30%;
+    margin: 3%;
+    overflow: hidden;
+    position: relative;
+}
+
+.work__item img {
+    width: 100%;
+}
+
+.work__item .caption {
+    font-size: 1vw;
+    text-align: center;
+    color: #fff;
+    padding: 48% 0;
+    letter-spacing: .5px;
+    font-family: 'Alfa Slab One', cursive;
+}
+
+.work__item .mask {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    /* マスクを表示しない */
+    background-color: rgba(0, 0, 0, 0.6);
+    -webkit-transition: all 0.4s ease-out;
+    transition: all 0.4s ease-out;
+}
+
+.work__item:hover .mask {
+    opacity: 1;
+    /* マスクを表示する */
+    -webkit-transform: scale(2);
+    /* 2倍に拡大 */
+    transform: scale(2);
+}
+
+
+/*______ここからfooter____________*/
+.footer {
+    margin: 0 auto;
+}
+
+.footer__img {
+    width: 100%;
+}
+
+.footer__img img {
+    width: 100%;
+}
+
+.footer__copyright {
+    text-align: center;
+    width: 100%;
+    margin-top: -1vw;
+    background-color: #000;
+}
+
+.copyright {
+    color: #fff;
+    padding: 5vw;
+    font-size: 2vw;
+    font-family: 'Alfa Slab One', cursive;
+    letter-spacing: 2px;
+}

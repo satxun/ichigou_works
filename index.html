@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <!--文字エンコードを指定する-->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!--IEを最適化する記述-->
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <!--ビューポートの設定(あらゆるデバイスで等倍で1倍で表示してという意味)-->
+    <title>佐藤雄一郎のポートフォリオサイト</title>
+    <!--タイトルを指定20文字程度-->
+    <meta name="description" content="デザイナー兼webデザイナー志望の佐藤雄一朗のポートフォリオサイトです。未経験から独学で勉強したデザインをフリーランスとして活動したのち後に、職業訓練校でWEBデザインの専門的知識を学なびました。在学中に作った作品やフリーランス時代の作品を載せています">
+    <!--サイトの説明150~170文字くらい位までに有益な文章を書き300文字以内で納める-->
+    <meta name="keywords" content="デザイナー,ポートフォリオ,WEBデザイン">
+    <meta name="robots" content="noindex" />    
+    <!----------------ここからレスポンシブとCSSへの記述----------------------->
+    <link rel="stylesheet" href="css/reset.css">
+    <!--デフォルトの設定を記述をリセットさせる-->
+    <link rel="stylesheet" href="css/mobile.css" media="screen and (max-width:560px)">
+    <link rel="stylesheet" href="css/tablet.css" media="screen and (min-width:561px) and (max-width:960px)">
+    <link rel="stylesheet" href="css/style.css" media="screen and (min-width:961px)">
+
+    <link href="https://fonts.googleapis.com/css?family=Alfa+Slab+One&display=swap" rel="stylesheet">
+    <!--font-family: 'Alfa Slab One', cursive;-->
+</head>
+
+<body>
+   
+<div class="warp">
+   
+<header class="header">
+    <h1 class="header__top">
+       <img src="img/top_rogo.png" alt="トップ画像">
+    </h1>
+    <nav class="global-nav">
+        <ul class="global-nav__container">
+            <li class="global-nav__item">
+               <a href="profile/index.html">ＰＲＯＦＩＬＥ</a>
+            </li>
+            <li class="global-nav__item">
+               <a href="gallery/index.html" target="_blank">ＧＡＬＬＥＲＹ</a>
+            </li>
+            <li class="global-nav__item">
+                <a href="mailto:hi-risk.no-return_@docomo.ne.jp">ＣＯＮＴＡＣＴ</a>
+            </li>
+        </ul>
+    </nav>
+</header>
+       
+<main>
+
+<section class="skill">
+    <h2 class="skill__heading">SKILL</h2>
+    <div class="skill__container">
+        <div class="skill__box">
+            <h3 class="skill__title--large">WEB&emsp;DESIGN</h3>
+            <h4 class="skill__title--small">ウェブ&emsp;デザイン</h4>
+            <div class="skill__item">
+                <div class="skill__icon">
+                    <img src="img/xd__icon.png" alt="xdロゴ">
+                </div>
+                <div class="skill__icon">
+                   <img src="img/HTML.png" alt="htmlロゴ">
+                </div>
+                <div class="skill__icon">
+                    <img src="img/CSS.png" alt="CSSロゴ">
+                </div>
+            </div>
+            <p class="skill__text">AdobeXDを使用してデザインカンプの作成を行えます。テキストエディタにBracketsを使用してHTML5/CSS3のコーディングを行い、レスポンシブに対応したデザインを作成できます。その他動的物などについては、jQueryをプラグインにて使用可能、JavaScriptは独学で勉強中です。
+                </p><!--skill__item-->
+        </div><!--skill__box-->
+                   
+        <div class="skill__box">
+            <h3 class="skill__title--large">DESIGN/PAINTING</h3>
+            <h4 class="skill__title--small">デザイン/ペインティング</h4>
+            <div class="skill__item">
+                <div class="skill__icon">
+                   <img src="img/PS__icon.png" alt="Photoshopアイコン">
+                </div>
+                <div class="skill__icon">
+                    <img src="img/Ai__icon.png" alt="illustratorアイコン">
+                </div>
+                <div class="skill__icon">
+                    <img src="img/CS__icon.png" alt="clipstudioアイコン">
+                </div>
+            </div><!--skill__item-->
+            <p class="skill__text">デザインはPhotoshopを使用してバナーやウェブデザインで使用する素材の作成を行えます。ペインティングはIllustratorを使用して名刺・ロゴ作成を行い、CLIPSTUDIOを使用してイラストやキャラクターデザインを行えます。いくつか過去に実務としての作成経験があります</p>
+        </div><!--skill__box-->
+        
+    </div><!--skill__container-->
+</section><!--<section class="skill">-->
+
+</main>
+
+
+
+
+<section class="work">
+    <h2 class="work__heading">WORK</h2>
+    <div class="work__container">
+        <ul class="work__nav">
+            <li class="work__item">
+                <a href="nextpage/business.html">
+                    <img src="img/WORK.png" alt="実務">
+                    <div class="mask">
+                        <p class="caption">Business</p>
+                    </div>
+                </a>
+            </li>
+
+            <li class="work__item">
+                <a href="nextpage/web.html">
+                    <img src="img/web.png" alt="ウェブデザイン">
+                    <div class="mask">
+                        <p class="caption">WebDesign</p>
+                    </div>
+                    </a>
+                </li>
+            <li class="work__item">
+                <a href="nextpage/photoshop.html">
+                    <img src="img/ps.png" alt="フォトショップ">
+                    <div class="mask">
+                        <p class="caption">Photoshop</p>
+                    </div>
+                </a>
+            </li>
+
+            <li class="work__item">
+                <a href="nextpage/illustrator.html">
+                   <img src="img/ai.png" alt="イラストレーター">
+                        <div class="mask">
+                        <p class="caption">Illustrator</p>
+                    </div>
+                </a>
+            </li>
+        </ul>
+
+    </div><!--<work__container>-->
+</section><!--<section class="work">-->
+        
+</div><!--<div class="warp">-->
+
+<footer class="footer">
+    <div class="footer__img"><img src="img/footer.png"></div>
+    <div class="footer__copyright">
+        <p class="copyright">Copyright<small>&copy;</small>&nbsp;ICIGOU-WORKs&nbsp;All Rights Reserved.</p>
+    </div>
+</footer>
+
+</body>
+
+</html>
