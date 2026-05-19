@@ -1,0 +1,143 @@
+/*
+
+accessibility	タブと矢印キーのナビゲーションを有効にするか。	true
+
+adaptiveHeight	スライダーの高さを現在のスライドの高さに設定。	false
+
+autoplay	自動再生を有効にするか。	false
+
+autoplaySpeed	自動再生のスライド切り替えまでの時間をミリ秒で設定。	3000
+
+arrows	スライドの左右の矢印ボタンを表示するか。	true
+
+asNavFor	スライダを他のスライダのナビゲーションに設定。クラス名かID名	null
+
+appendArrows	スライドの左右の矢印ボタンを挿入する場所を変更する。セレクタ、htmlString、配列、要素、jQueryオブジェクト	$(element)
+
+appendDots	スライドのドットインジケーターを挿入する場所を変更する。セレクタ、htmlString、配列、要素、jQueryオブジェクト	$(element)
+
+prevArrow	左の矢印ボタンのHTMLをカスタマイズ。	<button type=”button” class=”slick-prev”>Previous</button>
+
+nextArrow	右の矢印ボタンのHTMLをカスタマイズ。	<button type=”button” class=”slick-next”>Next</button>
+
+centerMode	スライドを中心に表示して部分的に前後のスライドが見えるように設定。 奇数番号のスライドに使用。	false
+
+centerPadding	センターモード時のサイドパディング。見切れるスライドの幅。’px’または’％’。	50px
+
+cssEase	CSS3アニメーションイージングを設定。	ease
+
+customPaging	dots:trueのとき、ドットをカスタマイズ。	n/a
+
+dots	ドットインジケーターを表示するか。	false
+
+dotsClass	ドットインジケーターのクラス名を設定。	slick-dots
+
+draggable	マウスでのドラッグを有効にするか。	true
+
+fade	スライダーの切り替えをスライドではなくフェイドインにするか。	false
+
+focusOnSelect	クリックでのスライド切り替えを有効にするか。	false
+
+easing	jQueryアニメーションイージングを追加。	linear
+
+edgeFriction	infinite:falseのときに最初と最後のスライドをスワイプした時のフリクション値を設定。	0.15
+
+infinite	スライドのループを有効にするか。	true
+
+initialSlide	スライドの開始番号。	0
+
+lazyLoad	画像の遅延読み込みを設定。’ondemand’もしくは’progressive’。	ondemand
+
+mobileFirst	レスポンシブの設定でモバイルの計算を優先させる。	false
+
+pauseOnFocus	自動再生時にスライドにフォーカスした際、自動再生をストップさせるか。	true
+
+pauseOnHover	自動再生時にスライドにマウスオーバーした際、自動再生をストップさせるか。	true
+
+pauseOnDotsHover	自動再生時にドットインジケーターにマウスオーバーした際、自動再生をストップさせるか。	false
+
+respondTo	レスポンシブの基準を設定。’window’もしくは’slider’もしくは’min’）	window
+
+responsive	breakpointで設定したいブレイクポイントを設定。settingsで画面サイズがブレイクポイントで設定した範囲内になったら振り分ける処理を設定	none
+
+rows	スライドの行数を設定。slidesPerRowを使用して、各行に含めるスライドの数を設定。	1
+
+slide	スライドとして使用する要素を設定。	”
+
+slidesPerRow	rowsオプションで2以上が設定されている際、各行にいくつのスライドを表示するか設定。	1
+
+slidesToShow	表示するスライド数を設定。	1
+
+slidesToScroll	スクロールするスライド数を設定。	1
+
+speed	スライド/フェードアニメーションの速度を設定。	300
+
+swipe	スワイプを有効にするか。	true
+
+swipeToSlide	slidesToScrollの設定に関係なく、ユーザーがスライドを直接ドラッグまたはスワイプした場合は1スライドずつ動かす。	false
+
+touchMove	タッチでスライドさせるか。	true
+
+touchThreshold	スワイプでスライドさせる距離を設定。（1 / touchThreshold）*スライダの幅。	5
+
+useCSS	CSS traditionを有効にするか。	true
+
+useTransform	CSS transformを有効にするか。	true
+
+variableWidth	可変幅のスライドにするか。（スライドの幅をバラバラにするか。）	false
+
+vertical	垂直スライドモードにするか。	false
+
+verticalSwiping	垂直のスワイプを有効にするか。	false
+
+rtl	スライダの方向を右から左に変更するか。（right to left）	false
+
+waitForAnimate	スライドアニメーション中にスライドを前後させる要求を無視するか	true
+
+zIndex	スライドの重なり順。	1000
+
+
+
+
+
+
+
+
+
+$('.slider').slick({
+		autoplay:true,
+		autoplaySpeed:5000,
+		dots:true,
+		slidesToShow:4,
+		responsive:[
+				{
+						breakpoint: 1024,
+						settings:{
+								slidesToShow:3,
+						}
+				},
+				{
+						breakpoint: 768,
+						settings:{
+								slidesToShow:2,
+						}
+				},
+				{
+						breakpoint: 480,
+						settings:{
+								slidesToShow:1,
+						}
+				},
+		]
+});
+
+
+
+
+
+
+
+
+
+
+*/

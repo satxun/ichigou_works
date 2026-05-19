@@ -1,0 +1,366 @@
+@charset "utf-8";
+
+@media all and (min-width:376px) {
+
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	width: 100%;
+	font-size: 1.25vw;
+	text-align: center;
+	background: #f5f5f5;
+	font-family: "Segoe UI",SegoeUI,"メイリオ", Meiryo,sans-serif;
+}
+
+li {
+	list-style-type: none;
+}
+
+a {
+	display: inline-block;
+	text-decoration: none;
+	color: #000;
+}
+
+h1 {
+	font-size: 3.15vw;
+	font-weight: normal;
+	margin-top: -0.5vw;
+}
+
+h1 > span {
+	font-size: 1.87vw;
+	margin-left: 0.5vw;
+	font-weight: bold;
+}
+
+h2 {
+	font-size: 1.87vw;
+}
+
+
+
+/*ヘッダー*/
+header {
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 10;
+	background: #f3ecda;
+	line-height: 7.2vw;
+}
+
+.title {
+	width: 26%;
+	min-width: 105px;
+	display: flex;
+	align-items: center;
+}
+
+header img {
+	width: 4.7vw;
+	height: 4.7vw;
+	display: inline-block;
+	margin: 1.1vw;
+}
+
+.titleNav {
+	width: 74%;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+}
+
+nav {
+	width: 65%;
+}
+
+nav ul {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+nav li {
+	width: 20%;
+	min-width: 50px;
+}
+
+.scrollSns {
+	width: 35%;
+	min-width: 110px;
+	display: flex;
+	justify-content: space-around;
+}
+
+.scrollSns p {
+	padding: 1.5%;
+}
+
+.search input {
+	width: 85%;
+	border-radius: 1.1vw;
+	margin-top: 2.5vw;
+}
+
+.Toggle {
+	display: none;
+}
+
+
+
+/*パンくずリスト*/
+.breadcrumb {
+	display: flex;
+	margin-top: 7.2vw;
+	line-height: 2.5vw;
+}
+
+.breadcrumb i {
+	margin-right: 0.5vw;
+}
+
+.breadcrumb > li:first-child::after {
+	display: inline-block;
+	content: ">";
+	width: 1.25vw;
+	height: 1.25vw;
+	padding-left: 2vw;
+}
+
+.breadcrumb > li {
+	margin: 1vw 2vw;
+}
+
+.breadcrumb > li:first-child {
+	margin-right: 0;
+}
+
+
+
+
+
+
+
+/*トップへ戻る*/
+.backTop {
+	width: 100px;
+	height: 0px;
+	position: fixed;
+	bottom: -50px;
+	right: 2.3vw;
+	z-index: 9;
+	display: none;
+	transition: 0.2s;
+}
+
+.backTop img {
+	display: block;
+	width: 100%;
+	vertical-align: baseline;
+}
+
+.backTop:hover {
+	transition: 0.5s;
+	bottom: 0;
+}
+
+
+
+
+
+
+
+/*ページタイトル*/
+h2 {
+	width: 100%;
+	padding: 1.1vw;
+	background: url("../img/title.png") no-repeat center/cover;
+}
+
+h2 > span {
+	display: block;
+	font-size: 1.25vw;
+	margin-top: -0.5vw;
+}
+
+
+h3 {
+	font-size: 1.87vw;
+	padding: 1.4vw;
+}
+
+/*コンセプト*/
+.concept {
+	width: 100%;
+	background: url("../img/concept.png") no-repeat center/cover;
+	margin: 2.5vw 0;
+	padding-bottom: 2.5vw;
+}
+
+.concept p {
+	font-size: 1.64vw;
+	line-height: 3vw;
+	white-space: pre-wrap;
+}
+
+
+
+
+/*ページ内リンク*/
+.pageNav ul {
+	width: 79%;
+	margin: 0 auto;
+	display: flex;
+	flex-wrap: wrap;
+	align-content: space-between;
+	justify-content: space-between;
+}
+
+.pageNav li {
+	width: 23%;
+	padding: 1.2vw 0;
+	margin-bottom: 1.5vw;
+	border-radius: 1.1vw;
+	background: #0c9bf6;
+}
+
+.pageNav li > a {
+	width: 100%;
+	height: 100%;
+}
+
+.pageNav li:hover {
+	opacity: 0.6;
+}
+
+
+
+
+section {
+	width: 92%;
+	margin: 5vw auto;
+	background: #fff;
+	text-align: left;
+	padding-bottom: 2.5vw;
+	box-shadow: 0 3px 6px #bbb;
+}
+
+section > h3 {
+	border-bottom: solid 0.8vw #FFE679;
+	padding-bottom: 0;
+}
+
+section > div {
+	margin: 1.5vw 0 0 15.1vw;
+	white-space: pre-wrap;
+	line-height: 2.5vw;
+}
+
+#access {
+	padding-bottom: 5vw;
+}
+
+.accessMap {
+	line-height: 0;
+	margin: 2.5vw 0;
+    width:80%;
+}
+
+#group > p {
+	font-size: 1.64vw;
+	text-align: center;
+	margin-top: 2.5vw;
+}
+
+
+
+#contact > div {
+	white-space: normal;
+	font-size: 1.87vw;
+}
+
+#contact dl {
+	display: flex;
+	text-align: left;
+	margin: 1vw 0px 1.25vw 1.3vw;
+}
+
+#contact dt {
+	width: 6vw;
+	text-align: center;
+	margin-right: 3vw;
+}
+
+#contact dd {
+	white-space: pre-wrap;
+}
+
+iframe {
+	width: 100%;
+	height: 26.5vw;
+}
+
+
+
+
+
+/*フッター*/
+.footerCotener {
+	display: flex;
+	justify-content: space-around;
+	font-size: 0.93vw;
+	background: #fff;
+}
+
+footer table, .company{
+	margin: 1.8vw 0  1.8vw;
+}
+
+caption , .company > p:first-child {
+	font-size: 1.87vw;
+	text-align: left;
+	border-bottom: solid 0.8vw #FFE679;
+}
+
+footer th, footer td {
+	padding: 0.5vw;
+}
+
+
+.company p:last-child {
+	margin: 1vw auto;
+}
+
+footer table td {
+	text-align: left;
+}
+
+footer ul {
+	margin-top: 3vw;
+}
+
+footer li {
+	list-style: disc;
+	text-align: left;
+	padding: 0.65vw;
+}
+
+
+
+.copy {
+	width: 100%;
+	line-height: 7.5vw;
+	background: #f3ecda;
+}
+
+
+
+}
