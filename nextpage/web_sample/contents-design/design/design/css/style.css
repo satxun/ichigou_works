@@ -1,0 +1,272 @@
+@charset "UTF-8";
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/*html{
+    scroll-behavior: smooth;
+}*/
+/*____ここからheader____*/
+header {
+    width: 80%;
+    margin: 0 auto 3.5vw;
+    position: relative;
+}
+
+h1 {
+    font-size: 2vw;
+}
+
+.global-nav {
+    width: 60%;
+    background-color: rgb(255, 255, 255, 0.3);
+    text-align: center;
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+    top: .1vw;
+    right: 9.8%;
+}
+
+.global-nav__item {
+    width: 18%;
+}
+
+.global-nav a {
+    border: 1px solid #000;
+    border-radius: 5px;
+    padding: 3%;
+    margin: 2%;
+    color: #000;
+    font-size: 1.3vw;
+    text-decoration: none;
+    display: block;
+}
+
+.global-nav a:hover {
+    opacity: 0.5;
+}
+
+.global-nav__item:nth-child(5) a {
+    color: #FFF;
+    background: red;
+    text-decoration: none;
+    display: block;
+}
+
+/*______ここまでheader_____*/
+
+
+/*_____ここから共通指示_____*/
+section {
+    border: 1px solid #000;
+    border-radius: 10px;
+    margin-bottom: 10vw;
+}
+
+h2 {
+    width: 20%;
+    text-align: center;
+    font-size: 3vw;
+    margin: -3% auto 0;
+    background: #fff;
+}
+h3{
+    font-size: 1.8vw;
+}
+p {
+    font-size: 1.1vw;
+}
+
+img {
+    width: 100%;
+    vertical-align: bottom;
+}
+
+.description {
+    font-size: 1.8vw;
+    text-align: center;
+    margin-bottom: 1vw;
+    white-space: pre-line;
+}
+
+
+/*_____まで共通指示_____*/
+
+
+/*______ここからmain______*/
+.wapr {
+    width: 80%;
+    margin: 5vw auto;
+}
+
+/*-------ここからuser-----*/
+
+.user__container {
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.user__box {
+    width: 40%;
+    margin-bottom: 1vw;
+}
+
+.user__footer{
+    font-size: 1.5vw;
+    text-align: right;
+    margin-right: 2vw;
+}
+/*______ここまでuser_____*/
+
+
+/*______ここからprinciple___*/
+.principle__container{
+    width: 90%;
+    margin: 0 auto 5vw;
+    display: flex;
+    justify-content: space-between;
+}
+
+.principle__box{
+    width: 30%;
+}
+
+.principle__img--box{
+    display: flex;
+    justify-content: space-between;
+    width:60%;
+}
+
+.principle__img{
+    width: 45%;
+}
+.principle__img--text{
+ text-align: center;   
+}
+
+/*______ここまでprinciple___*/
+
+/*______ここからlayout___*/
+
+.layout__container{
+    width: 90%;
+    margin: 0 auto 5vw;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.layout__box{
+    width: 40%;
+    text-align: center; 
+}
+.layout__img{
+    width: 80%;
+    margin: 0vw auto 1vw;
+}
+
+.layout__text{
+    text-align: left;
+    line-height: 1.5vw;
+    letter-spacing: 1px;
+}
+/*______ここまでlayout___*/
+
+/*______ここからfigure___*/
+#figure h2{
+    width:50%;
+}
+.figure__container{
+    width: 90%;
+    margin: 0 auto 5vw;
+    display: flex;
+    justify-content: space-between;
+}
+
+.figure__box{
+    width: 30%;
+}
+
+.figure__box h3{
+    text-align: center;
+}
+
+.figure__img{
+    width: 80%;
+    margin: 0 auto;
+}
+.figure__text{
+    margin-bottom: 0.5vw;
+ text-align: left; 
+}
+
+/*______ここまでfigure___*/
+
+
+/*______ここからtypography___*/
+#typography h2{
+    width: 40%;
+}
+
+.typography__container{
+    width: 90%;
+    margin: 0 auto 5vw;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.typography__box{
+    margin-bottom: 1vw;
+    width: 40%;
+    text-align: center; 
+}
+.typography__img{
+    width: 80%;
+    margin: 0vw auto 1vw;
+}
+
+.typography__text{
+    text-align: left;
+    line-height: 1.5vw;
+    letter-spacing: 1px;
+}
+
+/*______ここまでtypography___*/
+
+/*______ここからpsychology___*/
+#psychology h2{
+    width: 60%;
+}
+
+.psychology__container{
+    width: 90%;
+    margin: 0 auto 5vw;   
+}
+
+.psychology__box{
+    margin-bottom: 2vw;
+    width: 100%;
+    text-align: center; 
+}
+.psychology__box h3{
+    margin-bottom: -1.5vw;
+    text-align: left;
+}
+
+.psychology__text{
+    width: 90%;
+    margin: 0 auto;
+    text-align: left;
+    line-height: 1.8vw;
+    letter-spacing: 1px;
+    white-space: pre-line;
+}
+
+/*______ここまでpsychology___*/

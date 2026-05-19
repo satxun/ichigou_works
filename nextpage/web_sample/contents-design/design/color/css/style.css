@@ -1,0 +1,218 @@
+@charset "UTF-8";
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/*____ここからheader____
+*/
+header {
+    width: 80%;
+    margin: 0 auto 3.5vw;
+    position: relative;
+}
+
+h1 {
+    font-size: 2vw;
+}
+
+.global-nav {
+    width: 60%;
+    background-color: rgb(255, 255, 255, 0.3);
+    text-align: center;
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+    top: .1vw;
+    right: 9.8%;
+}
+
+.global-nav__item {
+    width: 18%;
+}
+
+.global-nav a {
+    border: 1px solid #000;
+    border-radius: 5px;
+    padding: 3%;
+    margin: 2%;
+    color: #000;
+    font-size: 1.3vw;
+    text-decoration: none;
+    display: block;
+}
+
+.global-nav a:hover {
+    opacity: 0.5;
+}
+
+.global-nav__item:nth-child(2) a {
+    color: #FFF;
+    background: red;
+    text-decoration: none;
+    display: block;
+}
+
+/*______ここまでheader_____*/
+
+
+/*_____ここから共通指示_____*/
+section {
+    border: 1px solid #000;
+    border-radius: 10px;
+    margin-bottom: 10vw;
+}
+
+h2 {
+    width: 20%;
+    text-align: center;
+    font-size: 3vw;
+    margin: -3% auto 0;
+    background: #fff;
+}
+
+p {
+    font-size: 1.1vw;
+}
+
+img {
+    width: 100%;
+    vertical-align: bottom;
+}
+
+.description {
+    font-size: 1.8vw;
+    text-align: center;
+    margin-bottom: 1vw;
+}
+
+
+/*_____まで共通指示_____*/
+
+/*______ここからmain______*/
+
+.wapr {
+    width: 80%;
+    margin: 0 auto;
+}
+
+/*______ここからcolor______*/
+
+.color__container {
+    width:90%;
+    margin: 0 auto;
+    display: flex;
+    justify-content:space-between ;
+}
+
+.color__rgb,
+.color__cmy
+{
+    width: 40%;  
+}
+/*______ここまでcolor______*/
+
+
+/*______ここからattribute______*/
+.attribute__container {
+    width: 90%;
+    margin: 0 auto;
+}
+
+/*ここからHue*/
+.hue__box {
+    display: flex;
+    justify-content: space-between;
+}
+
+.hue__img {
+    margin-top: -2vw;
+    width: 20%;
+}
+
+.hue__img:hover {
+    opacity: 0.5;
+
+}
+/*ここまでHue*/
+/*ここからHue*/
+.Saturation__box{
+    padding-bottom: 2vw;
+}
+/*ここまでHue*/
+
+
+/*_______ここまでattribute__*/
+
+/*_______ここからtone_______*/
+
+.tone__box {
+    width: 90%;
+    margin: 0 auto;
+}
+
+.tone__text--box {
+    width: 100%;
+    margin-top: 1vw;
+}
+
+.tone__img--box {
+    width: 100%;
+    margin-top: 1vw;
+    display: flex;
+    justify-content: space-around;
+}
+
+.tone__img {
+    text-align: center;
+    padding-bottom: 2vw;
+}
+
+.tone__img:hover {
+    opacity: 0.5;
+}
+
+.tone__img img {
+    width: 50%;
+}
+
+/*________ここからsafety___*/
+.safety h2{
+    width: 60%;
+}
+
+.safety__text--box {
+    width: 90%;
+    margin: 1vw auto 0;
+}
+
+.link a{
+    width: 10vw;
+    margin-left: auto;
+    margin-top: 1vw;
+    margin-bottom: 1vw;
+    text-align: center;
+    border: 1px solid #000;
+    border-radius: 15px;
+    font-size: 1.5vw;
+    color: #000;
+    text-decoration: none;
+    display: block;  
+}
+
+.link a:hover{
+    opacity: 0.5;
+}
+/*________ここまでsafety___*/
+
+/*________ここからuniversal___*/
+.universal h2{
+    width: 60%;
+}
+
+.universal__text--box {
+    width: 90%;
+    margin: 1vw auto 0;
+}

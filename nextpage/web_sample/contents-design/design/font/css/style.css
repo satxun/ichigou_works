@@ -1,0 +1,152 @@
+@charset "UTF-8";
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/*____ここからheader____
+*/
+header {
+    width: 80%;
+    margin: 0 auto 3.5vw;
+    position: relative;
+}
+
+h1 {
+    font-size: 2vw;
+}
+
+.global-nav {
+    width: 60%;
+    background-color: rgb(255, 255, 255, 0.3);
+    text-align: center;
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+    top: .1vw;
+    right: 9.8%;
+}
+
+.global-nav__item {
+    width: 18%;
+}
+
+.global-nav a {
+    border: 1px solid #000;
+    border-radius: 5px;
+    padding: 3%;
+    margin: 2%;
+    color: #000;
+    font-size: 1.3vw;
+    text-decoration: none;
+    display: block;
+}
+
+.global-nav a:hover {
+    opacity: 0.5;
+}
+
+.global-nav__item:nth-child(4) a {
+    color: #FFF;
+    background: red;
+    text-decoration: none;
+    display: block;
+}
+
+/*______ここまでheader_____*/
+
+
+/*_____ここから共通指示_____*/
+section {
+    border: 1px solid #000;
+    border-radius: 10px;
+    margin-bottom: 10vw;
+}
+
+h2 {
+    width: 20%;
+    text-align: center;
+    font-size: 3vw;
+    margin: -3% auto 0;
+    background: #fff;
+}
+h3{
+    font-size: 1.8vw;
+}
+p {
+    font-size: 1.1vw;
+}
+
+img {
+    width: 100%;
+    vertical-align: bottom;
+}
+
+.description {
+    font-size: 1.8vw;
+    text-align: center;
+    margin-bottom: 1vw;
+    white-space: pre-line;
+}
+
+
+/*_____まで共通指示_____*/
+
+
+/*______ここからmain______*/
+.wapr {
+    width: 80%;
+    margin: 5vw auto;
+}
+
+/*______ここからbasic_____*/
+.basic__container {
+    width: 90%;
+    margin: 0 auto 2vw;
+}
+
+.basic__img--box {
+    display: flex;
+    justify-content: space-between;
+    width: 100%
+}
+
+.basic__img--box div {
+    width: 23%;
+}
+.basic__img--box div img{
+    width: 100%;
+}
+.basic__map {
+    width: 80%;
+    margin: 0 auto;
+}
+
+/*_____ここまでbasic_____*/
+
+
+/*_____ここからtypography--*/
+
+.typography h2{
+    width: 40%;
+}
+.typography__box {
+        width: 90%;
+        margin: 0 auto 2vw;
+}
+
+.typography__img--box {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+}
+
+.typography__box:nth-child(6) .typography__img--box{
+   justify-content: space-between;
+}
+
+.typography__img--item{
+    width:30%;
+}

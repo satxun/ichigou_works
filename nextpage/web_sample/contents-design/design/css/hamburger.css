@@ -1,0 +1,78 @@
+@charset "UTF-8";
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/*ナビメニューのスタイルを指定*/
+.mobile-nav {
+    position: fixed;
+    /*表示位置を固定*/
+    z-index: 2;
+    /*重ね順を変更*/
+    top: 0;
+    /*表示位置を指定*/
+    left: 0;
+    /*表示位置を指定*/
+    color: #000;
+    /*文字色を黒にする*/
+    text-align: center;
+    /*テキストを中央揃え*/
+    width: 100%;
+    /*全幅表示*/
+    transform: translateY(-100%);
+    /*ナビを上に隠す*/
+    transition: all 0.6s;
+    /*アニメーションの時間を指定*/
+}
+
+.mobile-nav__box {
+    background: rgba(0,0,0,0.5);
+    /*背景をグレーにする*/
+    width: 100%;
+    margin: 0 auto;
+    padding: 0;
+}
+
+.mobile-nav__item {
+    font-size: 1.1em;
+    list-style-type: none;
+    padding: 0;
+    width: 100%;
+    border-bottom: 1px dotted #333;
+}
+
+.mobile-nav__item:last-child {
+    padding-bottom: 0;
+    border-bottom: none;
+    /*最後のメニュー項目のみ下線を消す*/
+}
+
+.mobile-nav__item a {
+    display: block;
+    font-family: 'Alfa Slab One', cursive;
+    text-decoration: none;
+    color: #fff;
+    padding: 1vw 0;
+}
+
+/*トグルボタンが押されたときに付与するクラス*/
+.mobile-nav.active {
+    transform: translateY(0%);
+}
+
+/*トグルボタンのスタイルを指定*/
+.Toggle {
+    padding: 1vw;
+    font-size: 2vw;
+    border: 1px solid #000;
+    border-radius: 10px;
+    writing-mode:vertical-rl;
+    display: block;
+    position: fixed;
+    top: 5%;
+    right: -1%;
+    z-index: 10;
+}
+

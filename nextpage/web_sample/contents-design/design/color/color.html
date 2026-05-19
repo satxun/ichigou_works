@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>色の知識</title>
+<link rel="stylesheet" href="css/mobile.css" media="screen and (max-width:768px)">
+<link rel="stylesheet" href="css/style.css" media="screen and (min-width:769px)">   
+
+<link rel="stylesheet" href="../css/lightbox.css">
+    
+<script src="../js/jquery-3.5.1.min.js"></script>
+<script src="../js/lightbox.js"></script>
+</head>
+
+<body>
+<header>
+        <h1>色のついて</h1>
+        <nav>
+            <ul class="global-nav">
+                <li class="global-nav__item"><a href="../indxe.html">最初へ</a></li>
+                <li class="global-nav__item"><a href="#">色</a></li>
+                <li class="global-nav__item"><a href="../Color-scheme/color-scheme.html">配色</a></li>
+                <li class="global-nav__item"><a href="../font/font.html">文字</a></li>
+                <li class="global-nav__item"><a href="../design/design.html">デザイン</a></li>
+            </ul>
+        </nav>
+    </header>
+
+<main class="wapr">
+
+<section class="color">
+    <h2>混色</h2>
+    <p class="description">
+        色を作る方法には大きく分けて
+        「加法混色」と「減法混色」の２つがある
+    </p>
+    <div class="color__container">
+        <div class="color__rgb">
+            <h3>加法混色</h3>
+            <p class="color__text">
+                光の三原色とも呼ばれ
+            </p> 
+            <p class="color__text">
+                R(Red)G(Green)B(Blue)の三つで構成される
+            </p>
+            <p class="color__text">
+                光が合わさって色が構成されるので最大値は白になる
+            </p>
+            <p class="color__text">
+                ディスプレイを通してみるものはこれを使う
+            </p>
+            <img src="img/rgb.png" alt="RBG">
+        </div>
+        <div class="color__cmy">
+            <h3>減法混色</h3>
+                <p class="color__text">色の三原色ともよれ</p>
+                <p class="color__text">C(Cyan)M(Magenta)Y(Yellow)の三つで構成される</p>
+                <p class="color__text">色が重なって構成されるので最大値は黒に近い色になる</p>
+                <p class="color__text">ポスターやチラシ等の印刷物でつかうのはこっち</p>
+                <img src="img/cmy.png" alt="CMY">
+            </div>
+    </div>
+</section><!--color-->
+
+<section class="attribute">
+    <h2>三属性</h2>
+    <p class="description">
+        色には性質があり、それらを彩度・明度・色相の
+        ３つに分けたものを色の三属性という
+    </p>        
+<div class="attribute__container">
+               
+<h3>色相(Hue)</h3>
+    <div class="hue__box">
+        <div class="hue__text--box">
+            <p class="hue__text">色を組み分けしていくときに赤み・青み…など色味の性質で分けていきます</p>
+            <p class="hue__text">これを色相と呼びます</p>
+            <p class="hue__text">色相を赤&#8658;橙&#8658;黄&#8658;緑&#8658;青&#8658;藍&#8658;青紫の順に変化した色相を輪にしたものを色相環と呼びます（右参照）</p>
+            <p class="hue__text"></p>
+            <p class="hue__text">色相環上で対角線上にある色同士を補色と呼ぶ</p>
+        </div>
+        
+        <div class="hue__img">
+            <a href="img/color_chart.jpg" data-lightbox="fuga" data-title="色相環" class="box01">
+            <img src="img/color_chart.jpg" alt="色相環" >
+            </a>
+        </div>
+    </div>  
+<h3>明度(Lightnss)</h3>
+    <div class="lightnss__box">
+        <div class="lightnss__text--box">
+            <p class="lightnss__text">同じ色でも明るい色や暗い色が存在します</p>
+            <p class="lightnss__text">それを明度と呼びます</p>
+            <p class="lightnss__text">明度違いを表すときは明るいものを「高明度」中間のものを「中明度」暗いものを「低明度」と表します</p>
+            <p class="lightnss__text">明度を測るにはグレイスケール(下記参照)を用いて同じ明るさを調べる</p>
+        </div>
+        <p class="scale__img"><img src="img/gray-scale.png" art="グレイスケール"></p>
+    </div>
+           
+<h3>彩度(Saturation)</h3>
+    <div class="Saturation__box">
+        <div class="Saturation__text--box">
+            <p class="Saturation__text">
+                同じ色でも鮮やかな色やくすんだ色が存在します。それを彩度と呼びます。
+            </p>
+            <p class="Saturation__text">
+                彩度の違いを表すときは明るいものを「高彩度」中間のものを「中彩度」暗いものを「低彩度」彩度がないものを「無彩色」と表します
+            </p>
+            <p class="Saturation__text">
+                無彩色の反対に彩度があるもの全体をさして有彩色とも呼びます
+            </p>
+            <p class="Saturation__text">
+                有彩色はさらに「純色」「明清色」「暗清色」「中間色」に分類できます
+            </p>
+            <p class="Saturation__text">
+                純色…「赤」や「青」のように有彩色でも最も彩度の高い色を指します
+            </p>
+            <p class="Saturation__text">
+                明清色…純色だけに「白」を加えたものを指します
+            </p> 
+            <p class="Saturation__text">
+                明暗色…純色だけに「黒」を加えたものを指します
+            </p>
+            <p class="Saturation__text">
+                中間色…純色に「灰色」を加えだものを指します
+            </p>
+        </div>            
+    </div>
+</div>
+</section><!--attribute-->
+
+<section class="tone">
+    <h2>トーン</h2>
+    <p class="description">
+        同じようなイメージを持つ
+        明度・彩度の領域をトーン又は色調と呼びます
+    </p>
+    <div class="tone__box">
+        <div class="tone__text--box">
+            <p class="tone__text">
+                「明るい色」「暗い色」「薄うい色」「濃い色」「鮮やかな色」「濁った色」などその色の持つ印象は色相が違っても同じような印象を持つものがあります
+            </p>
+            <p class="color__text">
+                色の持つ印象は彩度・明度が似ていれば共通しているのです
+            </p>
+            <p class="color__text">
+                 明度と彩度を複合して捉えた概念として、色相ごとに分類して有彩色１２トーン・無彩色５トーンに分類してあり各トーンごとに記号があります（下記参照）
+            </p>
+        </div>
+        <div class="tone__img--box">
+            <p class="tone__img">
+                <a href="img/tone.jpg" data-lightbox="fuga" data-title="トーン概念図" class="box01">
+                    <img src="img/tone.jpg" alt="トーン概念図" >
+                </a>
+            </p>
+            <p class="tone__img">
+                <a href="img/tone-img.png" data-lightbox="fuga" data-title="トーンのイメージ" class="box01">
+                    <img src="img/tone-img.png" alt="トーンのイメージ">
+                </a>
+            </p>
+        </div>
+    </div>
+</section>
+   
+<section class="safety">
+    <h2>ウェブセーフティーカラー</h2>
+    <p class="description">
+        閲覧環境に依存しない216色をWEBセーフカラーといいます
+    </p>
+        <div class="safety__text--box">
+            <p class="safetye__text">
+                ユーザーの閲覧環境によっては、制作者の指定した色が変換されて表示されてしまう可能性がありますが
+            </p>
+            <p class="safety__text">
+                WEBセーフカラーを使用することでそのリスクを低くすることができます。 安心して使用できるセーフなカラーというわけです。
+            </p>
+            <div class="link">
+                <a href="https://www.colordic.org/s">参照サイト</a>
+            </div>
+     </div>
+</section>
+
+ <section class="universal">
+    <h2>ユニバーサルカラー</h2>
+    <p class="description">
+        色覚異常者に情報が伝わるように配慮した色
+    </p>
+        <div class="universal__text--box">
+            <p class="universal__text">
+                トイレの男女の標識や信号き等、日常生活の情報を無意識に色に頼って判断しています。しかし色の見え方は誰しも同じとは限りません
+            </p>
+              <p class="universal__text">
+               色盲や色弱の様な色覚異常の方が不都合なく見えるように考えられたカラーを指します
+            </p>
+
+            <div class="link">
+                <a href="https://www.eizo.co.jp/products/ce/uc/index2.html">参照サイト</a>
+            </div>
+        </div>
+        
+</section>     
+</main>
+</body>
+
+</html>

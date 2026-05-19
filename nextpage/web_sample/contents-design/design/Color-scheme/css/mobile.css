@@ -1,0 +1,300 @@
+@charset "UTF-8";
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/*____ここからheader____
+*/
+header {
+    width: 95%;
+    margin: 0 auto 3.5vw;
+    position: relative;
+}
+
+h1 {
+    font-size: 2vw;
+}
+
+.global-nav {
+    width: 70%;
+    background-color: rgb(255, 255, 255, 0.3);
+    text-align: center;
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+    top: .5vw;
+    right: 9.8%;
+}
+
+.global-nav__item {
+    width: 18%;
+}
+
+.global-nav a {
+    border: 1px solid #000;
+    border-radius: 5px;
+    padding: 3%;
+    margin: 2%;
+    color: #000;
+    font-size: 2vw;
+    text-decoration: none;
+    display: block;
+}
+
+.global-nav a:hover {
+    opacity: 0.5;
+}
+
+.global-nav__item:nth-child(3) a {
+    color: #FFF;
+    background: red;
+    text-decoration: none;
+    display: block;
+}
+
+/*______ここまでheader_____*/
+
+
+/*_____ここから共通指示_____*/
+section {
+    border: 1px solid #000;
+    border-radius: 10px;
+    margin-bottom: 10vw;
+    padding-bottom: 2vw;
+}
+
+h2 {
+    width: 50%;
+    text-align: center;
+    font-size: 5vw;
+    margin: -3% auto 0;
+    background: #fff;
+}
+h3{
+    font-size: 3vw;
+}
+p {
+    font-size: 2.5vw;
+    letter-spacing: 1px;
+}
+
+img {
+    width: 100%;
+    vertical-align: bottom;
+}
+
+.description {
+    font-size: 2.5vw;
+    text-align: center;
+    margin-bottom: 5vw;
+    white-space: pre-line;
+}
+
+
+/*_____まで共通指示_____*/
+
+
+/*______ここからmain______*/
+.wapr {
+    width: 80%;
+    margin: 10vw auto;
+}
+
+/*______ここからimage______*/
+
+.image__container {
+    width: 90%;
+    margin: 0 auto;
+    display: block;
+}
+
+.image__box {
+    width: 100%;
+    margin: 2vw auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+/*色のsample*/
+.image__sample {
+    width: 10vw;
+    height: 10vw;
+    padding: .5vw;
+    background: red;
+    border-radius: 10%;
+}
+
+.image__box:nth-child(2) .image__sample {
+    background: yellow;
+}
+
+.image__box:nth-child(3) .image__sample {
+    background: pink;
+}
+
+.image__box:nth-child(4) .image__sample {
+    background: orange;
+}
+
+.image__box:nth-child(5) .image__sample {
+    background: purple;
+}
+
+.image__box:nth-child(6) .image__sample {
+    background: brown;
+}
+
+.image__box:nth-child(7) .image__sample {
+    background: blue;
+}
+
+.image__box:nth-child(8) .image__sample {
+    background: white;
+    border: 1px solid #000;
+}
+
+.image__box:nth-child(9) .image__sample {
+    background: green;
+}
+
+.image__box:nth-child(10) .image__sample {
+    background: gray;
+}
+
+.image__box:nth-child(11) .image__sample {
+    background: yellowgreen;
+}
+
+.image__box:nth-child(12) .image__sample {
+    background: black;
+    color: #fff;
+}
+
+.image__text {
+    padding: .2vw;
+    width: 80%;
+    text-align: left;
+}
+
+/*______ここまでimage______*/
+
+
+/*______ここからpsy______*/
+
+.psy__box {
+    width: 90%;
+    margin: 2vw auto 10vw;
+    text-align: center;
+}
+
+.psy__box--item:nth-child(1) img,
+.psy__box--item:nth-child(3) img {
+    margin: 3vw auto;
+}
+
+.psy__text {
+    line-height: 2;
+}
+
+/*______ここまでpsy______*/
+
+
+/*_____ここからbalance_____*/
+
+.balance__box {
+    width: 90%;
+    margin: 2vw auto 10vw;
+}
+
+.balance__img {
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+}
+
+.balance__img--item {
+    text-align: center;
+    margin: -1.5vw 0 1vw;
+    padding: 1vw 0;
+    width: 60%;
+    background-color: lightgray;
+}
+
+.balance__img--item:nth-child(2) {
+    width: 30%;
+    background-color: darkgray;
+}
+
+.balance__img--item:nth-child(3) {
+    width: 10%;
+    background-color: rebeccapurple;
+}
+
+/*_____ここまでbalance_____*/
+
+
+/*_____ここからHue__________*/
+
+.hue__container {
+    width: 90%;
+    margin: 0 auto;
+}
+
+.hue__box {
+    width: 100%;
+    margin-bottom: 10vw;
+}
+
+.hue__text--box h3 {
+    text-align: center;
+    white-space: pre-line;
+}
+
+.hue__text--box {
+    width: 100%;
+}
+
+.hue__img {
+    width: 50%;
+    margin: 0 auto;
+}
+
+.hue__img img {
+    width: 100%;
+}
+/*______ここまでHue______*/
+
+/*______ここからトーン______*/
+
+.tone__img--box {
+    width: 70%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.tone__img--box a:hover {
+    opacity: 0.7;
+}
+
+.tone__img {
+    width: 40%;
+}
+
+.tone__container {
+    width: 90%;
+    margin: 0 auto;
+}
+
+.tone__box {
+    width: 100%;
+    margin: 2vw auto 10vw;
+}
+
+.tone__footer {
+    font-size: 2vw;
+    text-align: right;
+}
