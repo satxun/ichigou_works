@@ -1,0 +1,166 @@
+@media screen and (max-width:850px) {
+
+    * {
+        font-size: 2vw;
+    }
+
+    .header_container {
+        background-color: transparent;
+        justify-content: space-between;
+    }
+
+    h1 {
+        width: 40vw;
+        margin-left: 3vw;
+    }
+
+    .global-nav {
+        display: none;
+    }
+
+    .mobile-nav {
+        display: block;
+        height: 100vh;
+    }
+
+    .mobile-nav__item a {
+        font-size: 5vw;
+        margin: 3vw auto;
+        font-family: 'Anton', sans-serif;
+        letter-spacing: 1px;
+        color: #fff;
+        display: block;
+    }
+
+    section {
+        width: 95%;
+        margin-bottom: 20vw;
+    }
+
+    #concept h2 {
+        font-size: 2.3vw;
+    }
+
+    #concept p {
+        font-size: 2.1vw;
+        line-height: 5vw;
+    }
+
+    .slider {
+        width: 60vw;
+        right: 0%;
+    }
+
+
+
+    /*ここからinstructor_____*/
+    #instructor {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .instructor__text {
+        width: 95%;
+        margin: 0 auto;
+        line-height: 3.5vw;
+        letter-spacing: 1.5px;
+        margin-right: 5%;
+        order: 2;
+    }
+
+    .instructor__text h3 {
+        font-size: 3vw;
+    }
+
+    .instructor__text p {
+        margin-left: 1vw;
+        font-size: 2.5vw;
+    }
+
+    .instructor__img {
+        width: 60%;
+        margin: 0 auto;
+        order: 2;
+    }
+
+    .history {
+        width: 100%;
+        order: 4;
+    }
+
+    #instructor h3 {
+        margin-top: 1vw;
+        padding-left: 2vw;
+        border-left: 1vw solid #999;
+        box-sizing: border-box;
+    }
+
+    table {
+        width: 90%;
+        margin-left: 1vw;
+    }
+
+    th {
+        text-align: left;
+        vertical-align: top;
+    }
+
+    td {
+        white-space: pre-line;
+    }
+
+    /*ここまでinstructor_________*/
+
+    table {
+        width: 100%;
+        margin-left: 0vw;
+    }
+
+    .system__text {
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    .system__text h3 {
+        margin-left: 3vw;
+        font-size: 3vw;
+    }
+
+    .system__text p {
+        font-size: 2.5vw;
+        text-align: left;
+        padding-left: 15vw;
+        margin-bottom: 1.5vw;
+    }
+
+    .system__text .text__footer {
+        font-size: 1.3vw;
+        text-align: center;
+    }
+
+
+    .calendar {
+        width: 90vw;
+        height: 60vw;
+        margin: 2vw auto;
+    }
+
+
+    #access {
+        margin: 10vw auto 0;
+        display: block;
+        text-align: center;
+    }
+
+    address {
+        white-space: normal;
+        font-size: 2vw;
+    }
+
+    .gmap {
+        width: 90vw;
+        height: 30vw;
+        margin: 2vw auto;
+    }
+}

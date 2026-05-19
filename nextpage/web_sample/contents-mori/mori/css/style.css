@@ -1,0 +1,371 @@
+@charset "UTF-8";
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    font-size: 1.3vw;
+    list-style: none;
+    text-decoration: none;
+    color: #333333;
+}
+
+img {
+    width: 100%;
+    vertical-align: bottom;
+}
+
+.mobile-nav {
+    display: none;
+}
+
+/*ここからheader_____*/
+.header_container {
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.5);
+    position: fixed;
+    display: flex;
+    justify-content: space-around;
+}
+
+h1 a {
+    color: #000;
+    font-family: 'Anton', sans-serif;
+    letter-spacing: 2px;
+    font-size: 3vw;
+    transition: 0.5s;
+    display: block;
+}
+
+h1 {
+    width: 20vw;
+}
+
+h1 a:hover {
+    opacity: 0.2;
+}
+
+.global-nav__box {
+    width: 30vw;
+    margin-top: 2.5vw;
+    display: flex;
+    justify-content: space-between;
+}
+
+.global-nav__item a {
+    display: block;
+    font-size: 1.7vw;
+    letter-spacing: 1px;
+    color: #000;
+    font-family: 'Anton', sans-serif;
+    transition: 0.2s;
+}
+
+.global-nav__item a:hover {
+    color: #d904d9;
+    transition: 0.5s;
+}
+
+.header__img {
+    width: 100%;
+}
+
+/*ここまでheader_____*/
+
+/*ここから共通指示____*/
+section {
+    width: 80%;
+    margin: 15vw auto;
+}
+
+h2 {
+    font-size: 5vw;
+}
+
+h3 {
+    font-size: 2vw;
+}
+
+/*ここまで共通指示_____*/
+
+/*ここからconcept_____*/
+#concept {
+    margin-top: 2vw;
+    padding-top: 4vw;
+
+}
+
+#concept h2 {
+    font-size: 2.5vw;
+    margin-bottom: 4vw;
+}
+
+
+#concept p {
+    font-size: 1.45vw;
+    line-height: 3vw;
+}
+
+#concept p:nth-child(2) {
+    font-weight: bold;
+}
+
+/*ここまでconcept_____*/
+
+/*ここからスライダー_____*/
+.slider {
+    width: 45vw;
+    margin-left: auto;
+    position: fixed;
+    top: -.5vw;
+    right: -10%;
+    z-index: -10;
+}
+
+/*ここまでスライダー_____*/
+
+/*ここからinstructor_____*/
+#instructor {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+#instructor h2 {
+    width: 100%;
+}
+
+
+.instructor__text {
+    width: 50%;
+    line-height: 2.5vw;
+    letter-spacing: 1px;
+    margin-right: 20%;
+}
+
+.instructor__text p {
+    margin-left: 1vw;
+}
+
+.instructor__img {
+    width: 30%;
+}
+
+.history {
+    width: 100%;
+}
+
+#instructor h3 {
+    margin-top: 1vw;
+    padding-left: 2vw;
+    border-left: 1vw solid #999;
+    box-sizing: border-box;
+}
+
+table {
+    width: 90%;
+    margin-left: 1vw;
+}
+
+th {
+    text-align: left;
+}
+
+/*ここまでinstructor_________*/
+
+/*ここからsystem_____________*/
+#system {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.system__text {
+    width: 45%
+}
+
+.system__text p {
+    font-size: 1.5vw;
+    padding-left: 1vw;
+    white-space: pre-line;
+    margin-bottom: 1.5vw;
+}
+
+.system__text .text__footer {
+    margin-top: -2vw;
+    font-size: 1.2vw;
+}
+
+.calendar {
+    width: 40%;
+    height: 28vw;
+    margin-top: 2vw;
+}
+
+iframe {
+    width: 100%;
+    height: 100%;
+}
+
+.banner {
+    width: 100%;
+    transition: .5s;
+}
+
+
+.banner a:hover {
+    opacity: 0.7;
+    transition: .5s;
+}
+
+/*ここまでsystem________*/
+
+/*ここからaccess_______*/
+#access {
+    display: flex;
+    justify-content: space-between;
+}
+
+#access p:nth-child(2) {
+    font-weight: bold;
+    font-size: 1.4vw;
+    letter-spacing: 1px;
+}
+
+#access p:nth-child(3) {
+    font-size: 1vw;
+}
+
+address {
+    white-space: pre-line;
+}
+
+.gmap {
+    width: 60%;
+    height: 20vw;
+}
+
+.gmap:hover {
+    opacity: 0.8;
+}
+
+/*ここまでaccess________*/
+
+/*ここからfooter_______*/
+
+footer {
+    margin-top: 10vw;
+    widows: 100%;
+    background-color: #333;
+    text-align: center
+}
+
+footer p {
+    color: #fff;
+}
+
+@media screen and (max-width:850px) {
+    .header_container {
+        justify-content: space-between;
+    }
+
+    h1 {
+        width: 40vw;
+        margin-left: 3vw;
+    }
+
+    .global-nav {
+        display: none;
+    }
+
+    .mobile-nav {
+        display: block;
+        height: 100vh;
+    }
+
+    .mobile-nav__item a {
+        font-size: 5vw;
+        margin: 3vw auto;
+        font-family: 'Anton', sans-serif;
+        letter-spacing: 1px;
+        color: #fff;
+        display: block;
+    }
+
+    section {
+        width: 95%;
+        margin-bottom: 20vw;
+    }
+
+    #concept p {
+        font-size: 1.5vw;
+        line-height: 5vw;
+    }
+
+    .slider {
+        width: 60vw;
+        right: 0%;
+    }
+
+    .instructor__text {
+        width: 65%;
+        line-height: 3vw;
+        letter-spacing: 1px;
+        margin-right: 5%;
+    }
+
+    table {
+        width: 100%;
+        margin-left: 0vw;
+    }
+
+    .system__text {
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    .system__text h3 {
+        margin-left: 3vw;
+        font-size: 3vw;
+    }
+
+    .system__text p {
+        font-size: 2.5vw;
+        text-align: right;
+        margin-bottom: 1.5vw;
+    }
+
+    .system__text .text__footer {
+        font-size: 1.3vw;
+        text-align: center;
+    }
+
+
+    .calendar {
+        width: 90vw;
+        height: 60vw;
+        margin: 2vw auto;
+    }
+
+
+    #access {
+        margin: 10vw auto 0;
+        display: block;
+        text-align: center;
+    }
+
+    address {
+        white-space: normal;
+        font-size: 2vw;
+    }
+
+    .gmap {
+        width: 90vw;
+        height: 30vw;
+        margin: 2vw auto;
+    }
+}

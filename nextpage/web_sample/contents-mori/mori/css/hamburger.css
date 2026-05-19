@@ -1,0 +1,121 @@
+@charset "UTF-8";
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/*ナビメニューのスタイルを指定*/
+.mobile-nav {
+    position: fixed;
+    /*表示位置を固定*/
+    z-index: 100;
+    /*重ね順を変更*/
+    top: 0;
+    /*表示位置を指定*/
+    left: 0;
+    /*表示位置を指定*/
+    background-color: rgba(0,0,0,0.7);
+    /*背景を白にする*/
+    text-align: center;
+    /*テキストを中央揃え*/
+    width: 100%;
+    /*全幅表示*/
+    transform: translateY(-100%);
+    /*ナビを上に隠す*/
+    transition: all 0.6s;
+    /*アニメーションの時間を指定*/
+}
+
+.mobile-nav__box {
+    width: 100%;
+    margin: 0 auto;
+    padding: 0;
+}
+
+.mobile-nav__item {
+    font-size: 1.1em;
+    list-style-type: none;
+    padding: 0;
+    width: 100%;
+    border-bottom: 1px dotted #333;
+}
+
+.mobile-nav__item:last-child {
+    padding-bottom: 0;
+    border-bottom: none;
+    /*最後のメニュー項目のみ下線を消す*/
+}
+
+.mobile-nav__item a {
+    display: block;
+    font-family: 'Alfa Slab One', cursive;
+    padding: 1vw 0;
+}
+
+/*トグルボタンが押されたときに付与するクラス*/
+.mobile-nav.active {
+    transform: translateY(0%);
+}
+
+/*トグルボタンのスタイルを指定*/
+.Toggle {
+    display: block;
+    position: fixed;
+    /* bodyに対しての絶対位置指定 */
+    right: 13px;
+    top: 12px;
+    width: 42px;
+    height: 42px;
+    cursor: pointer;
+    z-index: 100;
+}
+
+.Toggle span {
+    display: block;
+    position: absolute;
+    width: 30px;
+    border-bottom: solid 3px #000;
+/*メニューアイコンの色*/
+    -webkit-transition: .35s ease-in-out;
+    /*変化の速度を指定*/
+    -moz-transition: .35s ease-in-out;
+    /*変化の速度を指定*/
+    transition: .35s ease-in-out;
+    /*変化の速度を指定*/
+    left: 6px;
+}
+
+.Toggle span:nth-child(1) {
+    top: 9px;
+}
+
+.Toggle span:nth-child(2) {
+    top: 18px;
+}
+
+.Toggle span:nth-child(3) {
+    top: 27px;
+}
+
+/* 最初のspanをマイナス45度に */
+.Toggle.active span:nth-child(1) {
+    top: 18px;
+    left: 6px;
+    -webkit-transform: rotate(-45deg);
+    -moz-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+     border-bottom: solid 3px #ff00f5;
+    /*クリック後のメニューアイコンの色*/
+}
+
+/* 2番目と3番目のspanを45度に */
+.Toggle.active span:nth-child(2),
+.Toggle.active span:nth-child(3) {
+    top: 18px;
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    transform: rotate(45deg);
+     border-bottom: solid 3px #ff00f5;
+        /*クリック後のメニューアイコンの色*/
+}
