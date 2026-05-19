@@ -1,0 +1,155 @@
+@media screen and (min-width:561px) and (max-width:960px) {
+
+    .warp {
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    /*ーーーーーここからヘッダーナビーーーーーーーー*/
+    .Toggle {
+        display: none;
+    }
+
+    .mobile-nav {
+        display: none;
+    }
+
+    a {
+        text-decoration: none;
+        color: #000;
+    }
+
+    a:hover {
+        opacity: 0.5;
+    }
+
+    .header {
+        background-color: rgba(255,255,255,0.5);
+        display: flex;
+        justify-content: space-between;
+        position: fixed;
+        z-index: 100;
+        top: 0%;
+        left: 5%;
+        width: 90%;
+    }
+
+    .header__heading {
+        letter-spacing: 0.3vw;
+        font-family: 'Alfa Slab One', cursive;
+        font-size: 2.7vw;
+    }
+
+    nav {
+        width: 60%;
+    }
+
+    .global-nav {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .global-nav__item {
+        text-align: center;
+        font-size: 1.8vw;
+        font-weight: bold;
+        margin: 2vw auto 0px;
+        width: 20%;
+        overflow: hidden;
+    }
+
+    /*下線*/
+    .underbar {
+        width: 100px;
+        height: 0.2vw;
+        margin-top: 5px;
+        background-color: #000;
+        animation: myanimation 1s infinite;
+    }
+
+    @keyframes myanimation {
+        0% {
+            margin-left: -100%;
+        }
+
+        100% {
+            margin-left: 100%;
+        }
+    }
+
+    .breadcrumbs {
+        display: none;
+    }
+
+    /*ーーーーーーーここまでヘッダーナビーーーーーーーーー*/
+    /*ーーーーーーーここから作品欄ーーーーーーーーーーーー*/
+    main {
+        margin: 20vh auto;
+    }
+
+    .contents {
+        margin: 3vw 0;
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .contents__container {
+        text-align: center;
+        width: 30%;
+        height: auto;
+    }
+
+    .contents__heading {
+        text-align: center;
+        font-size: 4vw;
+        margin: 0 auto 2vw;
+    }
+
+    .contents__text{
+        font-size:  2vw;
+    }
+    
+ .contents__item {
+    width: 25%;
+    overflow: hidden;
+}
+
+.contents__item img {
+    width: 100%;
+    opacity: 1;
+    transition: transform 0.5s linear 0s;
+    transform: scale(1.0);
+}
+
+.contents__item img:hover {
+  transform: scale(1.5);
+    opacity: 0.8;
+}   /*ーーーーーーーーここまで作品欄ーーーーーーーーーーーーーーー*/
+    /*-------ここからfooter-------------*/
+    .footer {
+        margin: 0 auto;
+    }
+
+    .footer__img {
+        width: 100%;
+    }
+
+    .footer__img img {
+        width: 100%;
+    }
+
+    .footer__copyright {
+        text-align: center;
+        width: 100%;
+        margin-top: -1vw;
+        background-color: #000;
+
+    }
+
+    .copyright {
+        color: #fff;
+        padding: 5vw;
+        font-size: 1.5vw;
+        letter-spacing: 2px;
+        font-family: 'Alfa Slab One', cursive;
+    }
